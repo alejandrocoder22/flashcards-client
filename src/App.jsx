@@ -1,6 +1,10 @@
+import Header from './components/Header'
+
 function App () {
   return (
-    <h1>FlashCards App</h1>
+    <div className='container'>
+      <Header />
+    </div>
   )
 }
 
