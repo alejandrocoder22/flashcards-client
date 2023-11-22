@@ -1,12 +1,8 @@
-import Footer from './components/Footer'
-import Header from './components/Header'
+import Router from './router/Router'
 
 function App () {
   return (
-    <div className='container'>
-      <Header />
-      <Footer />
-    </div>
+    <Router />
   )
 }
 
