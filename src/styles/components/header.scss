@@ -1,0 +1,10 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  &__ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+}
