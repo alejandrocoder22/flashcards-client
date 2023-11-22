@@ -11,7 +11,6 @@ import Register from '../pages/Register'
 const Router = () => {
   return (
     <div className='container'>
-
       <Header />
       <BrowserRouter>
         <Routes>

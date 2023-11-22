@@ -1,4 +1,3 @@
-
 const CommunityCards = () => {
   return (
     <div>CommunityCards</div>
