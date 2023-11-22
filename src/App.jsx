@@ -1,10 +1,6 @@
-
-function App() {
-
+function App () {
   return (
-    
-<h1>FlashCards App</h1>
-   
+    <h1>FlashCards App</h1>
   )
 }
 
