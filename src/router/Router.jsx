@@ -10,20 +10,24 @@ import Register from '../pages/Register'
 
 const Router = () => {
   return (
-    <div className='container'>
-      <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/mis-tarjetas' element={<MyCards />} />
-          <Route path='/comunidad' element={<CommunityCards />} />
-          <Route path='/crear-tarjeta' element={<CreateCard />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/registrarse' element={<Register />} />
-        </Routes>
-      </BrowserRouter>
-      <Footer />
-    </div>
+    <>
+      <div className='container'>
+        <Header />
+        <main>
+          <BrowserRouter>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/mis-tarjetas' element={<MyCards />} />
+              <Route path='/comunidad' element={<CommunityCards />} />
+              <Route path='/crear-tarjeta' element={<CreateCard />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/registrarse' element={<Register />} />
+            </Routes>
+          </BrowserRouter>
+        </main>
+        <Footer />
+      </div>
+    </>
 
   )
 }
