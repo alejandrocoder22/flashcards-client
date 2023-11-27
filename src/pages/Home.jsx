@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Header from '../components/Header'
+import Sidebar from '../components/Sidebar'
 
 const getPublicCardsByTopic = async (setDecks) => {
   const response = await fetch('http://localhost:3001/api/decks?pagination=0&topic=Science')
@@ -14,7 +15,7 @@ const Home = () => {
   }, [])
   return (
     <div className='home'>
-      <aside className='home__sidebar'>Aside</aside>
+      <Sidebar/>
       <section className='home__cards-container'>
         <Header />
         <h2>Community topic flashcards</h2>

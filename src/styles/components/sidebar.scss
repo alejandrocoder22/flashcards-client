@@ -1,0 +1,16 @@
+.sidebar {
+  background-color: $main-color;
+  height: 100vh;
+  flex: 3;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  justify-content: ceter;
+  &__logo {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 4rem auto;
+  }
+}
