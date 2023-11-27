@@ -11,6 +11,22 @@
   }
   &__cards-container {
     flex: 7;
-    background-color: coral;
+    padding: 1rem;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+    padding-right: 2rem;
+    margin-top: 1.5rem;
+  }
+  &__card {
+    margin: 0.5rem 0;
+    padding: 1rem 0.5rem;
+    background-color: $secondary-color;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
   }
 }
