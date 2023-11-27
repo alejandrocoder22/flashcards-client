@@ -1,0 +1,16 @@
+.deck {
+  display: flex;
+  gap: 5rem;
+
+  &__deck-container {
+    flex: 7;
+    padding: 1rem;
+  }
+  &__card {
+    background-color: $main-color;
+    height: 25rem;
+    border-radius: 15px;
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+}
