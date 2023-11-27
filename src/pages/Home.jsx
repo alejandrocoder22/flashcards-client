@@ -15,13 +15,13 @@ const Home = () => {
   }, [])
   return (
     <div className='home'>
-      <Sidebar/>
+      <Sidebar />
       <section className='home__cards-container'>
         <Header />
         <h2>Community topic flashcards</h2>
-        <div className="home__cards">
+        <div className='home__cards'>
           {
-            decks.map(deck =>   <p className="home__card" key={deck.deck_id}>{deck.deck_name}</p>)
+            decks.map(deck => <p className='home__card' key={deck.deck_id}>{deck.deck_name}</p>)
           }
         </div>
       </section>
