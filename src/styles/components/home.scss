@@ -1,0 +1,16 @@
+.home {
+  display: flex;
+  gap: 5rem;
+
+  &__sidebar {
+    background-color: $main-color;
+    height: 100vh;
+    flex: 3;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  &__cards-container {
+    flex: 7;
+    background-color: coral;
+  }
+}

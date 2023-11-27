@@ -1,11 +1,21 @@
 .main-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 3rem 1rem;
-  background-color: green;
+  z-index: 1;
+  align-items: center;
+
   &__ul {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 1rem;
+  }
+  &__my-cards {
+    background-color: $main-color;
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
   }
 }
