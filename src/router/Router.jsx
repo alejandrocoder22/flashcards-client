@@ -6,6 +6,7 @@ import CommunityCards from '../pages/CommunityCards'
 import CreateCard from '../pages/CreateCard'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
+import Deck from '../pages/Deck'
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />
+            <Route path='/deck/:deckId' element={<Deck />} />
             <Route path='/mis-tarjetas' element={<MyCards />} />
             <Route path='/comunidad' element={<CommunityCards />} />
             <Route path='/crear-tarjeta' element={<CreateCard />} />
