@@ -13,4 +13,32 @@
     max-width: 35rem;
     margin: 0 auto;
   }
+  &__card-question {
+    padding-top: 2rem;
+    color: white;
+    text-align: center;
+  }
+  &__card-answer {
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    visibility: hidden;
+  }
+
+  &__button-response {
+    padding: 1rem 0.25rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(252, 252, 252);
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 8rem;
+  }
+}
+
+.show {
+  visibility: visible;
 }
