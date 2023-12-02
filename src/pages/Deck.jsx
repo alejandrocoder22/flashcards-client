@@ -15,15 +15,15 @@ const Deck = () => {
     }
     await fetch(import.meta.env.VITE_BASE_URL + 'api/users/login', {
       method: 'POST',
+      credentials: 'include',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      credentials: "include",
       body: JSON.stringify(userData)
     })
 
     const response = await fetch(import.meta.env.VITE_BASE_URL + 'api/decks/byId/1', {
-      credentials: 'include'
+      credentials: 'include',
     })
     const data = await response.json()
     setCard(data)
