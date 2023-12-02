@@ -8,21 +8,21 @@ const Deck = () => {
   const [showAnswer, setShowAnswer] = useState(false)
 
   const getCardById = async () => {
-    // const userData = {
-    //   username: 'amanda',
-    //   password: '123456',
-    //   email: 'amanda@gmail.com'
-    // }
-    // await fetch('http://localhost:3001/api/users/login', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   credentials: "include",
-    //   body: JSON.stringify(userData)
-    // })
+    const userData = {
+      username: 'amanda',
+      password: '123456',
+      email: 'amanda@gmail.com'
+    }
+    await fetch(import.meta.env.VITE_BASE_URL + 'api/users/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      credentials: "include",
+      body: JSON.stringify(userData)
+    })
 
-    const response = await fetch('http://localhost:3001/api/decks/byId/1', {
+    const response = await fetch(import.meta.env.VITE_BASE_URL + 'api/decks/byId/1', {
       credentials: 'include'
     })
     const data = await response.json()
