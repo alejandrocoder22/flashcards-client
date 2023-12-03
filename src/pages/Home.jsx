@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
+import { Link } from 'react-router-dom'
 
 const getPublicCardsByTopic = async (setDecks) => {
   const response = await fetch('http://localhost:3001/api/decks?pagination=0&topic=Science')
@@ -21,7 +22,7 @@ const Home = () => {
         <h2>Community topic flashcards</h2>
         <div className='home__cards'>
           {
-            decks.map(deck => <p className='home__card' key={deck.deck_id}>{deck.deck_name}</p>)
+            decks.map(deck => <Link to={`/deck/${deck.deck_id}`} key={deck.deck_id}> <p className='home__card' >{deck.deck_name}</p></Link>)
           }
         </div>
       </section>
