@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
-import { Link } from 'react-router-dom'
 import DeckList from '../components/DeckList'
 
 const getPublicCardsByTopic = async (setDecks) => {
