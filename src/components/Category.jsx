@@ -1,8 +1,9 @@
 
-const Category = () => {
+const Category = ({ category }) => {
   return (
-    <div className="category">
-        <img src="" alt="" />
+    <div className="">
+         <img src={category.img} alt="" />
+        <p>{category.name}</p>
       </div>
   )
 }
