@@ -1,10 +1,10 @@
-import Category from "./Category"
+import Categories from "./Categories"
 
 const Sidebar = () => {
   return (
     <aside className='sidebar'>
       <header className='sidebar__logo'>Logo</header>
-      <Category/>
+      <Categories/>
     </aside>
 
   )
