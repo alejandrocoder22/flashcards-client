@@ -1,7 +1,7 @@
-const Header = () => {
+const NoSidebarHeader = () => {
   return (
-    <header className='main-header'>
-      <div className='main-header__logo'>Logo</div>
+    <header className='main-header nosidebar'>
+      <div className='main-header__logo black '>Logo</div>
       <nav>
         <ul className='main-header__ul'>
           <li className='main-header__li'>Register</li>
@@ -13,4 +13,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default NoSidebarHeader
