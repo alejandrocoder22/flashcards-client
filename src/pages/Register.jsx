@@ -1,5 +1,6 @@
 import NoSidebarHeader from '../components/NoSidebarHeader'
 import useForm from '../hooks/useForm'
+import { onRegister } from '../services/auth'
 
 const Register = () => {
   const { handleForm, form } = useForm()
@@ -7,7 +8,7 @@ const Register = () => {
   return (
     <>
       <NoSidebarHeader />
-      <section className='auth'>
+      <form onSubmit={() => onRegister(e, form)} className='auth'>
         <div className='auth__input-container'>
           <label className='auth__label'>Username</label>
           <input onChange={handleForm} name="username" className='auth__input' />
@@ -26,7 +27,7 @@ const Register = () => {
         </div>
 
         <button className='auth__button'>Register</button>
-      </section>
+      </form>
     </>
   )
 }
