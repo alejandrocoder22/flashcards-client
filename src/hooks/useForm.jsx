@@ -1,13 +1,11 @@
-import { useState } from "react"
+import { useState } from 'react'
 
 const useForm = () => {
-    const [form, setForm] = useState({})
+  const [form, setForm] = useState({})
 
-
-    const handleForm = (e) => {
-        setForm({...form, [e.target.name]: e.target.value})
-    }
-
+  const handleForm = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
 
   return {
     handleForm,
