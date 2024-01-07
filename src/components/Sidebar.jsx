@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom'
 import Categories from './Categories'
 
 const Sidebar = () => {
   return (
     <aside className='sidebar'>
-      <header className='sidebar__logo'>Logo</header>
+      <Link to='/'>
+        <header className='sidebar__logo'>Logo</header>
+      </Link>
       <Categories />
     </aside>
 
