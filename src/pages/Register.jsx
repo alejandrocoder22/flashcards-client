@@ -11,15 +11,15 @@ const Register = () => {
       <form onSubmit={() => onRegister(e, form)} className='auth'>
         <div className='auth__input-container'>
           <label className='auth__label'>Username</label>
-          <input onChange={handleForm} name="username" className='auth__input' />
+          <input onChange={handleForm} name='username' className='auth__input' />
         </div>
         <div className='auth__input-container'>
           <label className='auth__label'>Email</label>
-          <input onChange={handleForm} name="email" className='auth__input' />
+          <input onChange={handleForm} name='email' className='auth__input' />
         </div>
         <div className='auth__input-container'>
           <label className='auth__label'>Password</label>
-          <input onChange={handleForm} name="password"  className='auth__input' />
+          <input onChange={handleForm} name='password' className='auth__input' />
         </div>
         <div className='auth__input-container'>
           <label className='auth__label'>Repeat Password</label>
