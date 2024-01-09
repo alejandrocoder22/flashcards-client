@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <aside className='sidebar'>
       <Link to='/'>
-        <header className='sidebar__logo'>Logo</header>
+        <header className='sidebar__logo'>LOGO</header>
       </Link>
       <Categories />
     </aside>
