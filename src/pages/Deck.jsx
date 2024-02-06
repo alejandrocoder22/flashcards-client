@@ -40,6 +40,12 @@ const Deck = () => {
     if (pagination > 1) setPagination(currentPagination => currentPagination - 1)
   }
 
+
+  const isDisabledNext = () => {
+    return pagination === card.length ? 'disabled' : ''
+  }
+
+  
   useEffect(() => {
     getCardById()
   }, [])
@@ -54,7 +60,7 @@ const Deck = () => {
           <p className={`deck__card-answer ${showAnswer && 'show'}`}>{card?.[pagination]?.answer}</p>
           <button onClick={onShowAnswer} className='deck__button-response'>See response</button>
         <div onClick={onPreviousCard} className='deck__arrow-prev'>Prev</div>
-        <div onClick={onNextCard} className='deck__arrow-next'>Next</div>
+        <div onClick={onNextCard} className={`deck__arrow-next ${isDisabledNext()}`} >Next</div>
         </div>
       </section>
 
