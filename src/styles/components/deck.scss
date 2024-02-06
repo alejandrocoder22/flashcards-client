@@ -1,7 +1,6 @@
 .deck {
   display: flex;
   gap: 5rem;
-
   &__deck-container {
     flex: 7;
     padding: 1rem;
@@ -11,6 +10,7 @@
     height: 25rem;
     max-width: 35rem;
     margin: 0 auto;
+    position: relative;
   }
   &__card-question {
     padding-top: 2rem;
@@ -34,6 +34,16 @@
     margin: 0 auto;
     display: block;
     margin-top: 8rem;
+  }
+  &__arrow-prev {
+    position: absolute;
+    left: -45px;
+    top: 50%;
+  }
+  &__arrow-next {
+    position: absolute;
+    right: -45px;
+    top: 50%;
   }
 }
 
