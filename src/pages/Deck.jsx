@@ -54,7 +54,7 @@ const Deck = () => {
           <p className={`deck__card-answer ${showAnswer && 'show'}`}>{card?.[pagination]?.answer}</p>
           <button onClick={onShowAnswer} className='deck__button-response'>See response</button>
         </div>
-        <div onClick={onPreviousCard} className='deck__arrow-next'>Prev</div>
+        <div onClick={onPreviousCard} className='deck__arrow-prev'>Prev</div>
         <div onClick={onNextCard} className='deck__arrow-next'>Next</div>
       </section>
 
