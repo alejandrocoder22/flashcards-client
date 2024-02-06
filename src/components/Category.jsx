@@ -1,8 +1,8 @@
 const Category = ({ category }) => {
   return (
-    <div className=''>
-      <img src={category.img} alt='' />
-      <p>{category.name}</p>
+    <div className='category'>
+      <img  className='category__image' src={category.img} alt='' />
+      <p className='category__p'>{category.name}</p>
     </div>
   )
 }
