@@ -1,5 +1,6 @@
-export const onRegister = async (e, form) => {
+export const onRegister = async (e, form, checkPassword) => {
   e.preventDefault()
+  checkPassword()
   const petition = fetch(import.meta.env.VITE_BASE_URL + 'api/users/register', {
     method: 'POST',
     headers: {
