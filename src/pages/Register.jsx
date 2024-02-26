@@ -19,11 +19,11 @@ const Register = () => {
         </div>
         <div className='auth__input-container'>
           <label className='auth__label'>Password</label>
-          <input onChange={handleForm} name='password' className='auth__input' />
+          <input onChange={handleForm} name='password' type='password' className='auth__input' />
         </div>
         <div className='auth__input-container'>
           <label className='auth__label'>Repeat Password</label>
-          <input className='auth__input' />
+          <input className='auth__input' type='password'/>
         </div>
 
         <button className='auth__button'>Register</button>
