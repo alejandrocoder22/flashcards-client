@@ -19,7 +19,7 @@ const [errorMsg, setErrorMsg] = useState('')
   return (
     <>
       <NoSidebarHeader />
-      <p>{errorMsg}</p>
+      <p className='auth__error-message'>{errorMsg}</p>
       <form onSubmit={(e) => onRegister(e, form, checkPassword)} className='auth'>
         <div className='auth__input-container'>
           <label className='auth__label'>Username</label>
