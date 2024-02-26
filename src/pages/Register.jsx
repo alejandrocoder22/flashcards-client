@@ -11,7 +11,7 @@ const [errorMsg, setErrorMsg] = useState('')
     console.log(form)
     if (form.password !== form.repeatpassword) {
       setErrorMsg('Both passwords bust he identical')
-      return
+      throw new Error('Both passwords bust he identical')
     } else {
       setErrorMsg('')
     }
