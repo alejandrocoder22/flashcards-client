@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <>
       <NoSidebarHeader />
-      <form onSubmit={(e) => onLogin(e.form)} className='auth'>
+      <form onSubmit={(e) => onLogin(e, form)} className='auth'>
         <div className='auth__input-container'>
           <label className='auth__label'>Username</label>
           <input onChange={handleForm} name='username' className='auth__input' />
