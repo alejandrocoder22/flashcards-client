@@ -12,3 +12,15 @@ export const onRegister = async (e, form, checkPassword) => {
 
   console.log(response)
 }
+
+
+  export const onLogin = (e, form) => {
+    e.preventDefault()
+    fetch(import.meta.env.VITE_BASE_URL + 'api/users/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form)
+    })
+  }
