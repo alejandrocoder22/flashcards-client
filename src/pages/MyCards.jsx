@@ -1,6 +1,14 @@
+import Sidebar from "../components/Sidebar"
+
 const MyCards = () => {
+
+  
+
   return (
-    <div>MyCards</div>
+<div className="my-cards">
+    <Sidebar/>
+    <div className="my-cards__content">test</div>
+</div>
   )
 }
 
