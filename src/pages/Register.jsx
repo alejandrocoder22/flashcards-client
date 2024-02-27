@@ -6,7 +6,7 @@ import { useState } from 'react'
 const Register = () => {
   const { handleForm, form } = useForm()
 
-const [errorMsg, setErrorMsg] = useState('')
+  const [errorMsg, setErrorMsg] = useState('')
   const checkPassword = () => {
     if (form.password !== form.repeatpassword) {
       setErrorMsg('Both passwords bust he identical')
@@ -35,7 +35,7 @@ const [errorMsg, setErrorMsg] = useState('')
         </div>
         <div className='auth__input-container'>
           <label className='auth__label'>Repeat Password</label>
-          <input onChange={handleForm} className='auth__input' name='repeatpassword' type='password'/>
+          <input onChange={handleForm} className='auth__input' name='repeatpassword' type='password' />
         </div>
         <button className='auth__button'>Register</button>
       </form>

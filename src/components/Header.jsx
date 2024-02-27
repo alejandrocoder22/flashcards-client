@@ -8,7 +8,7 @@ const Header = () => {
           <Link to='/registrarse'>
             <li className='main-header__li'>Register</li>
           </Link>
-          <Link to="/mis-tarjetas">
+          <Link to='/mis-tarjetas'>
             <li className='main-header__li main-header__my-cards'>My Cards</li>
           </Link>
         </ul>
