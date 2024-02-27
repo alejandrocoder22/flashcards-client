@@ -2,9 +2,7 @@ import useForm from '../hooks/useForm'
 import NoSidebarHeader from '../components/NoSidebarHeader'
 
 const Login = () => {
-
-  const {handleForm, form} = useForm()
-
+  const { handleForm, form } = useForm()
 
   const onLogin = (e) => {
     e.preventDefault()
@@ -13,12 +11,12 @@ const Login = () => {
       headers: {
         'Content-Type': 'application/json'
       },
-       body: JSON.stringify(form)
+      body: JSON.stringify(form)
     })
   }
   return (
-      <>
-    <NoSidebarHeader/>
+    <>
+      <NoSidebarHeader />
       <form onSubmit={onLogin} className='auth'>
         <div className='auth__input-container'>
           <label className='auth__label'>Username</label>
